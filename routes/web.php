@@ -17,5 +17,5 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
-// Ruta original de HomeController si la tenías
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
